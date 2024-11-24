@@ -1,0 +1,190 @@
+/* Reset stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Nagłówek */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Gradientowe tło dla sekcji */
+#home, #about, #portfolio, #contact {
+    background: linear-gradient(135deg, #333, #5f5648, #454a4e, #223435);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Sekcja Home */
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #312a1d;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #554933;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+.scroll-down i {
+    font-size: 2rem;
+    color: white;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Sekcja O mnie */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: left;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    max-width: 900px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Inne sekcje */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Formularz */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e65a50;
+}
+.animated-text {
+    background: linear-gradient(135deg, #ff6f61, #ffc371, #4facfe, #00f2fe);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 10s ease infinite;
+}

@@ -1,0 +1,32 @@
+Załóżmy, że robimy portfolio dla grafika komputerowego i ilustratora. Taka osoba będzie chciała zaprezentować swoje projekty: logotypy, ilustracje, grafiki cyfrowe, animacje oraz branding.
+
+---
+
+Plan graficzny strony:
+  Struktura strony:
+1. Nagłówek:
+   - Logo autora (nazwa, np. "Jan Kowalski - Graphic Designer").
+   - Menu z linkami:
+     - Strona główna (Home).
+     - O mnie (About Me).
+     - Portfolio (Portfolio).
+     - Kontakt (Contact).
+
+2. Strona główna (Hero Section):
+   - Duże tło (może to być jedna z ilustracji artysty).
+   - Hasło przewodnie, np. "Tworzę unikalne projekty graficzne dla Twojej marki".
+
+3. Sekcja "O mnie":
+   - Zdjęcie autora.
+   - Krótki opis: Kim jest, co oferuje, jakie ma doświadczenie.
+
+4. Portfolio:
+   - Siatka projektów z miniaturami (każda miniatura otwiera szczegóły projektu w popupie lub nowej sekcji).
+
+5. Kontakt:
+   - Formularz kontaktowy (Imię, E-mail, Wiadomość).
+   - Ikony social media (LinkedIn, Instagram, Behance).
+
+6. Stopka:
+   - Prawa autorskie.
+   - Szybkie linki do sekcji.
